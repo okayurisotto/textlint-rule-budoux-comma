@@ -1,0 +1,45 @@
+{
+  "name": "textlint-rule-budoux-comma",
+  "description": "BudouXを用いて読点の位置を校正するtextlintルール",
+  "version": "1.0.0",
+  "author": "okayurisotto",
+  "license": "CC0-1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okayurisotto/textlint-rule-budoux-comma.git"
+  },
+  "bugs": {
+    "url": "https://github.com/okayurisotto/textlint-rule-budoux-comma/issues"
+  },
+  "homepage": "https://github.com/okayurisotto/textlint-rule-budoux-comma#readme",
+  "keywords": [
+    "textlintrule"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "textlint-scripts test",
+    "build": "textlint-scripts build",
+    "prepublish": "npm run --if-present build",
+    "watch": "textlint-scripts build --watch"
+  },
+  "devDependencies": {
+    "@textlint/types": "^13.3.3",
+    "@tsconfig/node-lts": "^18.12.5",
+    "@tsconfig/strictest": "^2.0.2",
+    "@types/node": "^20.8.3",
+    "textlint-scripts": "^13.3.3",
+    "textlint-tester": "^13.3.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "budoux": "^0.5.2"
+  }
+}
